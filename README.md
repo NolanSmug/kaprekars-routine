@@ -5,7 +5,7 @@ recursive algorithm demonstrating it.
 ## How to Compute
 1. Take any 4-digit number with at least 2 unique digits (_ex_: `1110` is valid but `1111` is not).
 2. Arrange the digits in descending order (`8393 -> 9833`).
-3. Arrange the digits in ascending order (`9833 -> 3389`).
+3. Arrange the digits in ascending order (`8393 -> 3389`).
 4. Calculate the difference between those two numbers.
 5. Repeat steps 2-4 until reaching `6174` (the only number that maps to itself).
 
