@@ -7,15 +7,14 @@ public class Kaprekar {
         pw.write("Number,Steps\n");
 
         for (int i = 1000; i < 10000; i++) {
-            pw.printf("%d,%s\n", i, (kaprekar(i) == -1) ? "invalid number" : kaprekar(i) + (kaprekar(i) == 1 ? " step" : " steps"));
+            int steps = kaprekar(i)
+            pw.printf("%d,%s\n", i, steps == -1) ? "invalid number" : steps + (steps == 1 ? " step" : " steps"));
         }
         pw.close();
     }
 
     private static int kaprekar(int num) {
-        if (num == 1111 || num == 2222 || num == 3333 ||
-                num == 4444 || num == 5555 || num == 6666 ||
-                num == 7777 || num == 8888 || num == 9999) {
+        if (num % 1111 == 0) {
             return -1;
         }
         if (num == 6174) {
