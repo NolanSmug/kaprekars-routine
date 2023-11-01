@@ -17,6 +17,7 @@ public class Kaprekar {
         if (num % 1111 == 0) {
             return -1;
         }
+        
         if (num == 6174) {
             return 0;
         }
@@ -28,21 +29,18 @@ public class Kaprekar {
         }
 
         Arrays.sort(digits);
-        reverse(digits);
 
         int sorted = 0;
         for (int digit : digits) {
             sorted = sorted * 10 + digit;
         }
-
-        int reverse = Integer.parseInt(new StringBuilder(Integer.toString(sorted)).reverse().toString());
-        int difference = Math.abs(sorted - reverse);
-
-        if (difference == 6174) {
-            return 1;
+        
+        int reverse = 0;
+        for (int digit : reverse(digits)) {
+            reverse = reverse * 10 + digit;
         }
 
-        return 1 + kaprekar(difference);
+        return 1 + kaprekar(Math.abs(sorted - reverse));
     }
 
     private static void reverse(int[] array) {
@@ -56,6 +54,5 @@ public class Kaprekar {
             left++;
             right--;
         }
-
     }
 }
