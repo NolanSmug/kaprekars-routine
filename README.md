@@ -1,4 +1,4 @@
-# Kaprekar's Constant
+# Kaprekar's Routine
 Mathematician D. R. Kaprekar discovered an interesting pattern involving the number **6174**. I decided to write a
 recursive algorithm demonstrating it.
 
