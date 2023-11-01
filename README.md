@@ -28,7 +28,7 @@ recursive algorithm demonstrating it.
 8352 ascending  = 2358
 8532 - 2358 = 6174
 
-Done in 4 cycles
+Done in 4 steps
 ```
 
 ## Files
